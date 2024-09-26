@@ -21,12 +21,15 @@
 .green-burger {
   height: 100vh;
   scroll-snap-align: start;
+  background-size: contain, contain, cover;
+  background-position: 20%, 80%; /* Center the background */
+  background-repeat: no-repeat; /* Prevent the image from repeating */
 }
 
 .clasic-burger {
-  background: var(--red-gradient);
+  background-image: url("YUMMY.png"), url("BURGER.png"), var(--red-gradient);
 }
 
 .green-burger {
-  background: var(--green-gradient);
+  background-image: url("YUMMY.png"), url("BURGER.png"), var(--green-gradient);
 }
