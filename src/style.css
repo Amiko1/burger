@@ -4,4 +4,9 @@
   --color-white: #ffffff;
   --color-orange: #ffa900;
   --color-light-red-alt: #ff8b8b;
+
+  --font-size-small: 8px;
+  --font-size-medium: 16px;
+  --font-size-large: 24px;
+  --font-size-xlarge: 32px;
 }
