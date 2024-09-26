@@ -36,7 +36,11 @@
   background-image: url("YUMMY.png"), url("BURGER.png"), var(--green-gradient);
 }
 
-.closed__burger {
+.burger {
+  position: relative;
+}
+
+.burger__closed {
   cursor: pointer;
   animation-name: floating;
   animation-duration: 5s;
@@ -44,7 +48,7 @@
   animation-timing-function: ease-in-out;
 }
 
-.closed__burger--instruction {
+.burger__closed--instruction {
   font-size: var(--font-size-medium);
   color: var(--color-white);
   text-align: center;
@@ -52,10 +56,50 @@
   margin-top: 56px;
 }
 
-.burger {
+.burger__opened {
   display: none;
 }
 
 .burger__igredient {
   transform: translateY(20px);
+}
+
+.chips {
+  position: absolute;
+}
+
+.chipses {
+  --chips-gap: -0px;
+}
+
+.chips:nth-child(1) {
+  left: calc(-100% + var(--chips-gap));
+  top: 50%;
+  animation: floating-left 5s ease-in-out infinite;
+}
+.chips:nth-child(2) {
+  left: calc(-100% + var(--chips-gap));
+  top: 10%;
+  animation: floating-left 5s ease-in-out infinite;
+}
+.chips:nth-child(3) {
+  top: calc(-30% + var(--chips-gap));
+  left: calc(var(--chips-gap));
+
+  animation: floating-diagonal 5s ease-in-out infinite;
+}
+.chips:nth-child(4) {
+  top: calc(-30% + var(--chips-gap));
+  right: calc(-100% + var(--chips-gap));
+  animation: floating-right 5s ease-in-out infinite;
+}
+.chips:nth-child(5) {
+  right: calc(-100% + var(--chips-gap));
+  top: 20%;
+  animation: floating 5s ease-in-out infinite;
+}
+.chips:nth-child(6) {
+  right: calc(-100% + var(--chips-gap));
+  top: 80%;
+  animation: floating-right 5s ease-in-out infinite;
 }
