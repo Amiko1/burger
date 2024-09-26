@@ -17,19 +17,37 @@
   height: 100%;
 }
 
-.clasic-burger,
-.green-burger {
+.burger-section {
   height: 100vh;
   scroll-snap-align: start;
   background-size: contain, contain, cover;
-  background-position: 20%, 80%; /* Center the background */
-  background-repeat: no-repeat; /* Prevent the image from repeating */
+  background-position: 20%, 80%;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.clasic-burger {
+.burger__section--red {
   background-image: url("YUMMY.png"), url("BURGER.png"), var(--red-gradient);
 }
 
-.green-burger {
+.burger__section--green {
   background-image: url("YUMMY.png"), url("BURGER.png"), var(--green-gradient);
+}
+
+.closed__burger--instruction {
+  font-size: var(--font-size-medium);
+  color: var(--color-white);
+  text-align: center;
+  font-weight: bold;
+  margin-top: 56px;
+}
+
+.burger {
+  display: none;
+}
+
+.burger__igredient {
+  transform: translateY(20px);
 }
