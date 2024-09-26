@@ -36,6 +36,14 @@
   background-image: url("YUMMY.png"), url("BURGER.png"), var(--green-gradient);
 }
 
+.closed__burger {
+  cursor: pointer;
+  animation-name: floating;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
 .closed__burger--instruction {
   font-size: var(--font-size-medium);
   color: var(--color-white);
