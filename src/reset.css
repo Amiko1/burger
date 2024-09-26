@@ -14,6 +14,11 @@
   margin: 0;
 }
 
+html,
+body {
+  height: 100%;
+}
+
 /*
     Typographic tweaks!
     3. Add accessible line-height
