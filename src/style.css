@@ -107,7 +107,7 @@
 .chips:nth-child(7) {
   right: calc(var(--chips-gap) - 70%);
   top: 60%;
-  animation: floating-diagonal 5s ease-in-out infinite;
+  animation: floating 5s ease-in-out infinite;
 }
 .chips:nth-child(8) {
   right: calc(var(--chips-gap) - 70%);
