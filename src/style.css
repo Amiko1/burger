@@ -58,11 +58,54 @@
 }
 
 .burger__opened {
-  display: none;
+  cursor: pointer;
+  animation-name: floating;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
 }
 
+/* burger ingreedients */
+.burger__top--bun {
+  transform: translateY(100px);
+}
+
+.burger__tomato {
+  transform: translateY(75px);
+}
+
+.burger__onions {
+  transform: translateY(50px);
+}
+
+.burger__bacon {
+  transform: translateY(25px);
+}
+
+.burger__cheese {
+  transform: translateY(0px);
+}
+
+.burger__meat {
+  transform: translateY(-25px);
+}
+
+.burger__letuce {
+  transform: translateY(-50px);
+}
+
+.burger__bottom--bun {
+  transform: translateY(-75px);
+}
+
+/* burger ingreedients */
+
 .burger__igredient {
-  transform: translateY(20px);
+  /* transform: translateY(20px); */
+  transition: all 0.2s ease-in-out;
+}
+
+.burger__igredient img {
 }
 
 .chips {
@@ -122,4 +165,8 @@
 
 .display-block {
   display: block;
+}
+
+.transform-normal {
+  transform: translateY(0px);
 }
