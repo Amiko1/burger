@@ -102,27 +102,39 @@
 
 .burger__igredient {
   /* transform: translateY(20px); */
+  position: relative;
+
   transition: all 0.2s ease-in-out;
 }
 .burger__description {
   color: var(--color-white);
   position: absolute;
-  width: 100%;
+  width: 50%;
   right: 100%;
   top: 50%;
+  margin-right: 16px;
+  display: none;
+  animation: hide-out 1s ease-in-out;
 }
 
 .burger__description--right {
   left: 100%;
-  top: 50%;
+  margin-left: 16px;
 }
+
 .burger__description {
   color: var(--color-white);
 }
 
 .burger__description h3 {
-  padding-bottom: 16px;
-  border-bottom: 3px solid var(--color-white);
+  white-space: nowrap;
+}
+
+.burger__description p {
+  white-space: nowrap;
+}
+.burger__description hr {
+  border: 1px solid var(--color-white);
 }
 
 .chips {
@@ -150,7 +162,7 @@
   animation: floating-diagonal 5s ease-in-out infinite;
 }
 .chips:nth-child(4) {
-  top: calc(-40% + var(--chips-gap));
+  top: calc(-20% + var(--chips-gap));
   left: calc(var(--chips-gap) - 0%);
   animation: floating-left 5s ease-in-out infinite;
 }
