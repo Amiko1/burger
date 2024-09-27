@@ -2,9 +2,7 @@ import "./reset.css";
 import "./style.css";
 import "./animate.css";
 
-const openedBurgers = document.querySelectorAll(
-  ".burger__opened"
-) as unknown as HTMLDivElement;
+const openedBurgers = document.querySelectorAll(".burger__opened");
 const burgerIngredients = document.querySelectorAll(".burger__igredient");
 const burgerDescriptions = document.querySelectorAll(".burger__description");
 const burgerSectionHeaders = document.querySelectorAll(
