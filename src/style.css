@@ -104,8 +104,25 @@
   /* transform: translateY(20px); */
   transition: all 0.2s ease-in-out;
 }
+.burger__description {
+  color: var(--color-white);
+  position: absolute;
+  width: 100%;
+  right: 100%;
+  top: 50%;
+}
 
-.burger__igredient img {
+.burger__description--right {
+  left: 100%;
+  top: 50%;
+}
+.burger__description {
+  color: var(--color-white);
+}
+
+.burger__description h3 {
+  padding-bottom: 16px;
+  border-bottom: 3px solid var(--color-white);
 }
 
 .chips {
